@@ -1,0 +1,66 @@
+            <footer>
+    <div id="notification-modal"></div>
+    <div class="wrapper">
+        <div class="body">
+            <nav id="quick_links" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="http://www.westkowloon.hk/${lang}/privacy" id="footer.privacy-policy.link" title="${go_to_privacy_policy}">${privacy_policy}</a></li>
+                        <li>
+                            <a href="http://www.westkowloon.hk/${lang}/siteinformation" id="footer.site-info.link" title="${go_to_site_information}">${site_information}</a></li>
+                        <li>
+                            <a href="http://www.westkowloon.hk/${lang}/contact" id="footer.contact-us.link" title="${Go to Contact Us}">${contact_us}</a></li>
+                </ul></nav>
+                        <div class="social_links col-3">
+                            <h6><span id="footer.social.label">${follow_us}</span></h6>
+                <ul>
+                    <li class="facebook">
+                        <a class="external_link" href="https://www.facebook.com/westkowloon" title="${Join us on Facebook}" id="footer.social.facebook.tooltip" target="_blank"><!-- Join us on Facebook --></a>
+                    </li>
+                    <li class="twitter">
+                        <a class="external_link" href="https://twitter.com/wkcda" title="${follow_us_on_twitter}" id="footer.social.twitter.tooltip" target="_blank"><!-- Follow us on Twitter --></a>
+                    </li>
+                    <li class="weibo">
+                        <a class="external_link" href="http://e.weibo.com/u/3536903827" title="${find_us_on_weibo}" id="footer.social.weibo.tooltip" target="_blank"><!-- Find us on Weibo --></a>
+                    </li>
+                    <li class="wechat">
+                        <!-- <a class="external_link" href="https://weixin.qq.com/r/k0SHgwvEY8MfKU-gbxEX" title="${follow_us_on_wechat}" id="footer.social.wechat.tooltip" target="_blank"><1!-- Find us on WeChat --1></a> -->
+                        <input type="checkbox" id="trigger_qr_weechat" hidden>
+                        <label for="trigger_qr_weechat">
+                        <a title="${follow_us_on_wechat}" id="footer.social.wechat.tooltip" target="_blank"><!-- Find us on WeChat --></a></label>
+                        </label>
+                        <label for="trigger_qr_weechat" class="qr_weechat"><img src="qrcode_wk.jpg"></label>
+                    </li>
+                </ul>
+            </div>
+            
+            <a href="https://www.westkowloon.hk/${lang}/enews" class="quick_form" id="footer.subscribe.link">${subscribe_to_e_newsletter}</a>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <p>
+            <span id="footer.copyright">${copy_right}</span><span id="footer-year">2019</span>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        jQuery('#footer-year').text(getCurrentYear());
+    </script>
+</footer>
+        </div>
+        
+	<div id="lang-light-box" class="hidden">
+  <div class="lang-light-box-wall"></div>
+  <div class="cssload-container">
+    <div class="cssload-speeding-wheel"></div>
+  </div>
+  <div id="dalbulat">
+    <span id="loading.label"></span>
+  </div>
+</div>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+</body>
+</html>

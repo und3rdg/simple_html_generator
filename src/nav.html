@@ -1,0 +1,93 @@
+<div class="site_nav_wrap">
+<div id="site_nav" class="site_nav">
+    <input id="triger_hamburger" type="checkbox" hidden />
+    <input id="triger_login" type="checkbox" hidden />
+
+    <nav id="nav_top" role="navigation">
+        <a href="https://www.westkowloon.hk/${lang}/">${home}</a>
+        <a href="https://wk.org.hk/tickets-${lang}">${whats_on}</a>
+        <label id="hamburger"
+               for="triger_hamburger"
+               >
+               <svg class="closed" width="20px" height="20px" viewBox="0 0 10 10">
+                   <line y2="2" y1="2" x1="0" x2="10" />
+                   <line y2="5" y1="5" x1="0" x2="10" />
+                   <line y2="8" y1="8" x1="0" x2="10" />
+               </svg>
+            <svg class="opened" width="20px" height="20px" viewBox="0 0 10 10">
+                <line x1="9" y1="9" x2="1" y2="1" />
+                <line x1="1" y1="9" x2="9" y2="1" />
+            </svg>
+        </label>
+    </nav>
+
+
+    <nav id="nav_bottom" role="navigation">
+        <ul id="actions_nav">
+            <li class="search">
+                <a href="https://www.westkowloon.hk/${lang}/search" class="trigger" title="${go_to_search}">
+                    <svg x="0px" y="0px" viewBox="0 0 100 100" stroke="white" stroke-width="13" fill="none" width="17px">
+                        <circle cx="45" cy="45" r="35"></circle>
+                        <line x1="70" y1="70" x2="100" y2="100"></line>
+                    </svg>
+                </a>
+            </li>
+
+
+            <li class="login-trigger">
+                <label  id="login"
+                    for="triger_login"
+                    class="fucking_bootstrap_reset"
+                    >
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 512 512">
+                            <g fill="#E9EBED" fill-rule="evenodd" transform="translate(61 58)">
+                            <path d="M196 218C135.800962 218 87 169.199038 87 109 87 48.8009623 135.800962 0 196 0 256.199038 0 305 48.8009623 305 109 305 169.199038 256.199038 218 196 218zM196 173.2C231.456681 173.2 260.2 144.456681 260.2 109 260.2 73.5433191 231.456681 44.8 196 44.8 160.543319 44.8 131.8 73.5433191 131.8 109 131.8 144.456681 160.543319 173.2 196 173.2zM0 387.47871C0 387.47871 29.6433734 244.648693 197.405296 240 360.704381 246.53989 391 383.681655 391 383.681655L343.251298 395.431666C343.251298 395.431666 324.566854 292.418714 194.326191 290.642801 63.9530151 295.275501 48.3433479 397 48.3433479 397"/>
+                            </g>
+                        </svg>
+                    </a>
+                </label>
+                <div class="login-dropdown" id="slide-toggle">
+                    <div class="logout-board logout-state" style="display: block;">
+                        <span class="login-hyperlink-login"><a href="https://account.westkowloon.hk/${lang}/my-westkowloon-login" id="loginbar.login.link">${log_in}</a>/<a href="https://account.westkowloon.hk/${lang}/my-westkowloon-register" id="loginbar.register.link">${register}</a></span>
+                    </div>
+                    <div class="login-board login-state" style="display: none;">
+                        <label class="greeting-infor"><span id="loginbar.loggedin.hello.label">${hello}</span> <span class="login-board-name" style="display: none;"><!-- Name --></span></label>
+                        <div class="link-style">
+                            <a id="loginbar.loggedin.logout.link" class="loginbar.loggedin.logout.link login-board-logout" style="display: none;">${logout} &gt;</a>
+                        </div>
+                        <span class="login-infor" id="loginbar.loggedin.extra.text">${loggedin_extra_text}</span>
+                    </div>
+                </div>
+            </li>
+
+
+            <li id="menu_top_cart">
+                <a href="https://tickets.westkowloon.hk/westkowloon/confirm/shoppingcart" id="cart-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 512 512">
+                        <g fill="#E9EBED">
+                        <path d="M117.296144,215.961534 L300.027781,215.961534 L339.841599,123.374411 L73.7499625,123.374411 L117.296144,215.961534 Z M414.419872,84.0593828 L336.575682,264.39071 L82.4177535,264.39071 L0.625420971,74.9452348 L357.866096,74.9452348 L386.91177,0.987 L511.367451,0.987 L511.367451,49.5228741 L429.680872,49.5228741 L414.419872,84.0593828 Z" transform="matrix(-1 0 0 1 511.993 0)"/>
+                        <path d="M165.69035,330.166338 C165.69035,306.213274 185.250524,286.796927 209.381018,286.796927 C233.511511,286.796927 253.071683,306.213274 253.071683,330.166338 C253.071683,354.119401 233.511511,373.53575 209.381018,373.53575 C185.250524,373.53575 165.69035,354.119401 165.69035,330.166338 Z" transform="matrix(-1 0 0 1 418.762 0)"/>
+                        <path d="M350.319163,330.166338 C350.319163,306.213274 369.879336,286.796927 394.00983,286.796927 C418.140323,286.796927 437.700496,306.213274 437.700496,330.166338 C437.700496,354.119401 418.140323,373.53575 394.00983,373.53575 C369.879336,373.53575 350.319163,354.119401 350.319163,330.166338 Z" transform="matrix(-1 0 0 1 788.02 0)"/>
+                        </g>
+                    </svg>
+                    <span class="bought-number">0</span>
+                </a>
+            </li>
+        </ul>
+        <ul id="lang_nav">
+            <li class="${active_lang_en}">
+                <a id="tenant_lang_en_hk" href="#" title="${switch_to_en}">EN</a>
+            </li>
+            <li class="${active_lang_tc}">
+                <a id="tenant_lang_zh_hk" href="#" title="${switch_to_tc}">繁</a>
+            </li>
+            <li class="${active_lang_sc}">
+                <a id="tenant_lang_zh_cn" href="#" title="${switch_to_sc}">简</a>
+            </li>
+
+        </ul>
+    </nav>
+
+</div>
+</div>
